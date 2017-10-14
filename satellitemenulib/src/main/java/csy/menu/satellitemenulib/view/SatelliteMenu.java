@@ -33,9 +33,6 @@ import csy.menu.satellitemenulib.R;
 public class SatelliteMenu extends RelativeLayout implements View.OnClickListener {
     private List<TextView> textViews;
 
-    public List<String> getNameMenuItem() {
-        return nameMenuItem;
-    }
 
     public void setNameMenuItem(List<String> nameMenuItem) {
         this.nameMenuItem = nameMenuItem;
@@ -423,6 +420,8 @@ public class SatelliteMenu extends RelativeLayout implements View.OnClickListene
     }
 
     public void setMenuImage(int imageResource) {
+        RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams((int) mMenuImageWidth, (int) mMenuImageWidth);
+        ivAdd.setLayoutParams(params);
         ivAdd.setImageResource(imageResource);
     }
 

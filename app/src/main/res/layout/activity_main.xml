@@ -35,7 +35,7 @@
         android:layout_alignParentTop="true"
         app:menu_postion="left_top"
         app:radius="150dp"
-        app:menu_item_image_width="45dp"
+        app:menu_item_image_width="50dp"
         app:menu_image_width="45dp"
         app:menu_item_text_size="4sp"
         app:menu_item_text_color="@color/colorPrimary"
@@ -62,7 +62,7 @@
         android:layout_alignParentTop="true"
         app:menu_postion="left_bottom"
         app:radius="150dp"
-        app:menu_image_width="45dp"
+        app:menu_image_width="35dp"
         app:menu_item_image_width="30dp"
         android:id="@+id/mSatelliteMenuLeftBottom"></csy.menu.satellitemenulib.view.SatelliteMenu>
 
@@ -75,7 +75,7 @@
         android:layout_alignParentTop="true"
         app:menu_postion="right_bottom"
         app:radius="150dp"
-        app:menu_image_width="45dp"
+        app:menu_image_width="30dp"
         app:menu_item_image_width="25dp"
         android:id="@+id/mSatelliteMenuRightBottom"></csy.menu.satellitemenulib.view.SatelliteMenu>
 
