@@ -21,6 +21,30 @@ android {
     }
 }
 
+/** 以下开始是将Android Library上传到jcenter的相关配置**/
+apply plugin: 'com.novoda.bintray-release'//添加
+//项目主页
+def siteUrl = 'https://github.com/chenshouyin/SatelliteMenu'
+publish{
+    repoName = 'SatelliteMenuRepository'//远程仓库名字,不指明，默认是上传到maven
+    userOrg = 'chenshouyin'//bintray.com的用户名
+    groupId = 'csy.menu.satellitemenulib'//jcenter上的路径
+    artifactId = 'SatelliteMenu'//项目名称
+    publishVersion = '1.0.1'//版本号
+    desc = 'Android弧形菜单 1、支持上下左右四个方向展开弧形菜单 ' +
+            '2、支持扩展菜单,多少个子菜单都可以 ' +
+            '3、支持自定义菜单图标和子菜单图标 ' +
+            '4、支持自定义菜单弹出的圆弧半径 ' +
+            '5、支持设置菜单按钮和子菜单按钮大小 ' +
+            '6、支持是否显示子菜单文字'//描述，不重要
+    website = siteUrl//项目主页
+}
+tasks.withType(Javadoc) {//防止编码问题
+    options.addStringOption('Xdoclint:none', '-quiet')
+    options.addStringOption('encoding', 'UTF-8')
+    options.addStringOption('charSet', 'UTF-8')
+}
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {

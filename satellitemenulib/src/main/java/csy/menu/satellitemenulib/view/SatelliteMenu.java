@@ -54,6 +54,10 @@ public class SatelliteMenu extends RelativeLayout implements View.OnClickListene
     private RelativeLayout rootView;
     private OnMenuItemClickListener mOnMenuItemClickListener;
 
+    public Builder getmBuilder() {
+        return new Builder(mContext);
+    }
+
     public SatelliteMenu(Context context) {
         super(context);
         initView(context, null);
@@ -442,4 +446,41 @@ public class SatelliteMenu extends RelativeLayout implements View.OnClickListene
         return (int) (pxValue / scale + 0.5f);
     }
 
+
+    /**
+     * 构造器
+     */
+    public class Builder{
+        private int menuImageResource;
+        private List<String> menuItemName;
+        private List<Integer> imageMenuItemImageResource;
+        private SatelliteMenu mSatelliteMenu;
+        private Context mContext;
+        private OnMenuItemClickListener mOnMenuItemClickListener;
+        public Builder(Context mContext){
+            this.mContext = mContext;
+        }
+        public Builder setMenuImage(int menuImageResource){
+            this.menuImageResource = menuImageResource;
+            return this;
+        }
+        public Builder setMenuItemImageResource(List<Integer> imageMenuItemImageResource){
+            this.imageMenuItemImageResource = imageMenuItemImageResource;
+            return this;
+        }
+        public Builder setMenuItemNameTexts(List<String> menuItemName){
+            this.menuItemName = menuItemName;
+            return this;
+        }
+        public Builder setOnMenuItemClickListener(OnMenuItemClickListener mOnMenuItemClickListener){
+            this.mOnMenuItemClickListener = mOnMenuItemClickListener;
+            return this;
+        }
+        public void creat(){
+            SatelliteMenu.this.setMenuImage(menuImageResource);
+            SatelliteMenu.this.setMenuItemImage(imageMenuItemImageResource);
+            SatelliteMenu.this.setNameMenuItem(menuItemName);
+            SatelliteMenu.this.setOnMenuItemClickListener(mOnMenuItemClickListener);
+        }
+    }
 }

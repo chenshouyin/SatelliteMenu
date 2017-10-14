@@ -10,10 +10,10 @@
         android:textColor="#Ffffff"
         android:textSize="18sp"
         android:gravity="center"
-        android:text="动画菜单"
+        android:text="弧形动画菜单"
         android:layout_width="match_parent"
         android:layout_height="45dp" />
-    <Button
+<Button
         android:background="@color/colorPrimary"
         android:padding="10dp"
         android:layout_centerInParent="true"
@@ -31,8 +31,6 @@
         android:layout_marginTop="45dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
         app:menu_postion="left_top"
         app:radius="150dp"
         app:menu_item_image_width="50dp"
@@ -46,20 +44,16 @@
         android:layout_marginTop="45dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
         app:menu_postion="right_top"
         app:radius="130dp"
         app:menu_image_width="45dp"
-        app:menu_item_image_width="40dp"
+        app:menu_item_image_width="35dp"
         android:id="@+id/mSatelliteMenuRightTop"></csy.menu.satellitemenulib.view.SatelliteMenu>
 
     <!--左下-->
     <csy.menu.satellitemenulib.view.SatelliteMenu
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
         app:menu_postion="left_bottom"
         app:radius="150dp"
         app:menu_image_width="35dp"
@@ -71,8 +65,6 @@
     <csy.menu.satellitemenulib.view.SatelliteMenu
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
         app:menu_postion="right_bottom"
         app:radius="150dp"
         app:menu_image_width="30dp"

@@ -14,7 +14,8 @@ import csy.menu.satellitemenulib.view.SatelliteMenu;
 
 public class MainActivity extends AppCompatActivity {
 
-    private SatelliteMenu mSatelliteMenuLeftTop,mSatelliteMenuRightTop,mSatelliteMenuRightBottom,mSatelliteMenuLeftBottom;
+    private SatelliteMenu mSatelliteMenuLeftTop, mSatelliteMenuRightTop, mSatelliteMenuRightBottom, mSatelliteMenuLeftBottom;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,16 +38,17 @@ public class MainActivity extends AppCompatActivity {
         nameMenuItem.add("图库");
         nameMenuItem.add("相机");
         nameMenuItem.add("电话");
-        mSatelliteMenuLeftTop.setNameMenuItem(nameMenuItem);//如果需要设置菜单文字,在setMenuItemImage之前设置
-        mSatelliteMenuLeftTop.setMenuImage(R.drawable.menu);//设置菜单图片以及子菜单图片
-        mSatelliteMenuLeftTop.setMenuItemImage(imageResourceLeftTop);
-        mSatelliteMenuLeftTop.setOnMenuItemClickListener(new SatelliteMenu.OnMenuItemClickListener() {
-            @Override
-            public void onClick(View view, int postion) {
-                Toast.makeText(MainActivity.this,"点击了菜单:"+postion,Toast.LENGTH_LONG).show();
-            }
-        });
-
+        mSatelliteMenuLeftTop.getmBuilder()
+                .setMenuImage(R.drawable.menu)
+                .setMenuItemImageResource(imageResourceLeftTop)
+                .setMenuItemNameTexts(nameMenuItem)
+                .setOnMenuItemClickListener(new SatelliteMenu.OnMenuItemClickListener() {
+                    @Override
+                    public void onClick(View view, int postion) {
+                        Toast.makeText(MainActivity.this, "点击了菜单:" + postion, Toast.LENGTH_LONG).show();
+                    }
+                })
+                .creat();
 
         List<Integer> imageResourceRightTop = new ArrayList<>();//菜单图片,可根据需要设置子菜单个数
         imageResourceRightTop.add(R.drawable.imag_msg);
@@ -55,17 +57,18 @@ public class MainActivity extends AppCompatActivity {
         imageResourceRightTop.add(R.drawable.imag_take_photo);
         imageResourceRightTop.add(R.drawable.imag_tel);
         imageResourceRightTop.add(R.drawable.iv_move);
-        mSatelliteMenuRightTop.setMenuImage(R.drawable.menu);//设置菜单图片以及子菜单图片
-        mSatelliteMenuRightTop.setMenuItemImage(imageResourceRightTop);
-        mSatelliteMenuRightTop.setOnMenuItemClickListener(new SatelliteMenu.OnMenuItemClickListener() {
-            @Override
-            public void onClick(View view, int postion) {
-                Toast.makeText(MainActivity.this,"点击了菜单:"+postion,Toast.LENGTH_LONG).show();
-            }
-        });
+        mSatelliteMenuRightTop.getmBuilder()
+                .setMenuImage(R.drawable.menu)
+                .setMenuItemImageResource(imageResourceRightTop)
+                .setOnMenuItemClickListener(new SatelliteMenu.OnMenuItemClickListener() {
+                    @Override
+                    public void onClick(View view, int postion) {
+                        Toast.makeText(MainActivity.this, "点击了菜单:" + postion, Toast.LENGTH_LONG).show();
+                    }
+                })
+                .creat();
 
-
-        List<Integer> imageResourceLeftBottom= new ArrayList<>();//菜单图片,可根据需要设置子菜单个数
+        List<Integer> imageResourceLeftBottom = new ArrayList<>();//菜单图片,可根据需要设置子菜单个数
         imageResourceLeftBottom.add(R.drawable.imag_msg);
         imageResourceLeftBottom.add(R.drawable.imag_music);
         imageResourceLeftBottom.add(R.drawable.imag_pic);
@@ -73,16 +76,19 @@ public class MainActivity extends AppCompatActivity {
         imageResourceLeftBottom.add(R.drawable.imag_tel);
         imageResourceLeftBottom.add(R.drawable.iv_move);
         imageResourceLeftBottom.add(R.drawable.iv_time);
-        mSatelliteMenuLeftBottom.setMenuImage(R.drawable.menu);//设置菜单图片以及子菜单图片
-        mSatelliteMenuLeftBottom.setMenuItemImage(imageResourceLeftBottom);
-        mSatelliteMenuLeftBottom.setOnMenuItemClickListener(new SatelliteMenu.OnMenuItemClickListener() {
-            @Override
-            public void onClick(View view, int postion) {
-                Toast.makeText(MainActivity.this,"点击了菜单:"+postion,Toast.LENGTH_LONG).show();
-            }
-        });
 
-        List<Integer> imageResourceRightBottom= new ArrayList<>();//菜单图片,可根据需要设置子菜单个数
+        mSatelliteMenuLeftBottom.getmBuilder()
+                .setMenuImage(R.drawable.menu)
+                .setMenuItemImageResource(imageResourceLeftBottom)
+                .setOnMenuItemClickListener(new SatelliteMenu.OnMenuItemClickListener() {
+                    @Override
+                    public void onClick(View view, int postion) {
+                        Toast.makeText(MainActivity.this, "点击了菜单:" + postion, Toast.LENGTH_LONG).show();
+                    }
+                })
+                .creat();
+
+        List<Integer> imageResourceRightBottom = new ArrayList<>();//菜单图片,可根据需要设置子菜单个数
         imageResourceRightBottom.add(R.drawable.imag_msg);
         imageResourceRightBottom.add(R.drawable.imag_music);
         imageResourceRightBottom.add(R.drawable.imag_pic);
@@ -91,19 +97,22 @@ public class MainActivity extends AppCompatActivity {
         imageResourceRightBottom.add(R.drawable.iv_move);
         imageResourceRightBottom.add(R.drawable.iv_time);
         imageResourceRightBottom.add(R.drawable.iv_mobile);
-        mSatelliteMenuRightBottom.setMenuImage(R.drawable.menu);//设置菜单图片以及子菜单图片
-        mSatelliteMenuRightBottom.setMenuItemImage(imageResourceRightBottom);
-        mSatelliteMenuRightBottom.setOnMenuItemClickListener(new SatelliteMenu.OnMenuItemClickListener() {
-            @Override
-            public void onClick(View view, int postion) {
-                Toast.makeText(MainActivity.this,"点击了菜单:"+postion,Toast.LENGTH_LONG).show();
-            }
-        });
+
+        mSatelliteMenuRightBottom.getmBuilder()
+                .setMenuImage(R.drawable.menu)
+                .setMenuItemImageResource(imageResourceRightBottom)
+                .setOnMenuItemClickListener(new SatelliteMenu.OnMenuItemClickListener() {
+                    @Override
+                    public void onClick(View view, int postion) {
+                        Toast.makeText(MainActivity.this, "点击了菜单:" + postion, Toast.LENGTH_LONG).show();
+                    }
+                })
+                .creat();
     }
 
-    public void myOnclick(View view){
-        if (view.getId()== R.id.btText){
-            Toast.makeText(MainActivity.this,"项目Github地址,喜欢就给个Star吧",Toast.LENGTH_LONG).show();
+    public void myOnclick(View view) {
+        if (view.getId() == R.id.btText) {
+            Toast.makeText(MainActivity.this, "项目Github地址,喜欢就给个Star吧", Toast.LENGTH_LONG).show();
             Intent intent = new Intent();
             intent.setAction("android.intent.action.VIEW");
             Uri content_url = Uri.parse("https://github.com/chenshouyin");
