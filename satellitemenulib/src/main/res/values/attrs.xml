@@ -5,6 +5,8 @@
         <attr name="radius" format="dimension"></attr>
         <attr name="menu_image_width" format="dimension"></attr>
         <attr name="menu_item_image_width" format="dimension"></attr>
+        <attr name="menu_item_text_size" format="dimension"></attr>
+        <attr name="menu_item_text_color" format="color"></attr>
 
         <attr name="menu_postion" format="integer">
             <enum name="left_top"  value="0"></enum>

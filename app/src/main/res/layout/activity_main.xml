@@ -37,6 +37,8 @@
         app:radius="150dp"
         app:menu_item_image_width="45dp"
         app:menu_image_width="45dp"
+        app:menu_item_text_size="4sp"
+        app:menu_item_text_color="@color/colorPrimary"
         android:id="@+id/mSatelliteMenuLeftTop"></csy.menu.satellitemenulib.view.SatelliteMenu>
 
     <!--右上-->

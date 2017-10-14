@@ -31,6 +31,13 @@ public class MainActivity extends AppCompatActivity {
         imageResourceLeftTop.add(R.drawable.imag_pic);
         imageResourceLeftTop.add(R.drawable.imag_take_photo);
         imageResourceLeftTop.add(R.drawable.imag_tel);
+        List<String> nameMenuItem = new ArrayList<>();//菜单图片,可根据需要设置子菜单个数
+        nameMenuItem.add("短信");
+        nameMenuItem.add("音乐");
+        nameMenuItem.add("图库");
+        nameMenuItem.add("相机");
+        nameMenuItem.add("电话");
+        mSatelliteMenuLeftTop.setNameMenuItem(nameMenuItem);//如果需要设置菜单文字,在setMenuItemImage之前设置
         mSatelliteMenuLeftTop.setMenuImage(R.drawable.menu);//设置菜单图片以及子菜单图片
         mSatelliteMenuLeftTop.setMenuItemImage(imageResourceLeftTop);
         mSatelliteMenuLeftTop.setOnMenuItemClickListener(new SatelliteMenu.OnMenuItemClickListener() {
