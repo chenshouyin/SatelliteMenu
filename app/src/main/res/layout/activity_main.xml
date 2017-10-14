@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:background="@color/colorPrimary"
+        android:textColor="#Ffffff"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:text="动画菜单"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+    <Button
+        android:background="@color/colorPrimary"
+        android:padding="10dp"
+        android:layout_centerInParent="true"
+        android:textColor="#ffffff"
+        android:id="@+id/btText"
+        android:onClick="myOnclick"
+        android:gravity="center"
+        android:text="项目Github地址,喜欢就给个Star吧"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <!--左上-->
+    <csy.menu.satellitemenulib.view.SatelliteMenu
+        android:layout_marginTop="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        app:menu_postion="left_top"
+        app:radius="150dp"
+        app:menu_item_image_width="45dp"
+        app:menu_image_width="45dp"
+        android:id="@+id/mSatelliteMenuLeftTop"></csy.menu.satellitemenulib.view.SatelliteMenu>
+
+    <!--右上-->
+    <csy.menu.satellitemenulib.view.SatelliteMenu
+        android:layout_marginTop="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        app:menu_postion="right_top"
+        app:radius="130dp"
+        app:menu_image_width="45dp"
+        app:menu_item_image_width="40dp"
+        android:id="@+id/mSatelliteMenuRightTop"></csy.menu.satellitemenulib.view.SatelliteMenu>
+
+    <!--左下-->
+    <csy.menu.satellitemenulib.view.SatelliteMenu
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        app:menu_postion="left_bottom"
+        app:radius="150dp"
+        app:menu_image_width="45dp"
+        app:menu_item_image_width="30dp"
+        android:id="@+id/mSatelliteMenuLeftBottom"></csy.menu.satellitemenulib.view.SatelliteMenu>
+
+
+    <!--右下-->
+    <csy.menu.satellitemenulib.view.SatelliteMenu
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        app:menu_postion="right_bottom"
+        app:radius="150dp"
+        app:menu_image_width="45dp"
+        app:menu_item_image_width="25dp"
+        android:id="@+id/mSatelliteMenuRightBottom"></csy.menu.satellitemenulib.view.SatelliteMenu>
+
+</RelativeLayout>

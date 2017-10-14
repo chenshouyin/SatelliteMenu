@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="satellite_style">
+
+        <attr name="menu_heihgt" format="dimension">45</attr>
+    </declare-styleable>
+
+</resources>

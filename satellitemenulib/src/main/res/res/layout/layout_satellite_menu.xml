@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <ImageView
+        android:id="@+id/ivMsg"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/imag_msg"/>
+
+    <ImageView
+        android:id="@+id/ivMusic"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/imag_music"/>
+
+    <ImageView
+        android:id="@+id/ivPic"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/imag_pic"/>
+
+    <ImageView
+        android:id="@+id/ivTakePhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/imag_take_photo"/>
+
+    <ImageView
+        android:id="@+id/ivTel"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/imag_tel"/>
+
+
+    <ImageView
+        android:id="@+id/ivAdd"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/imag_add"/>
+</RelativeLayout>
