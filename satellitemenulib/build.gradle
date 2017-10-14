@@ -30,7 +30,7 @@ publish{
     userOrg = 'chenshouyin'//bintray.com的用户名
     groupId = 'csy.menu.satellitemenulib'//jcenter上的路径
     artifactId = 'SatelliteMenu'//项目名称
-    publishVersion = '1.0.1'//版本号
+    publishVersion = '1.0.2'//版本号
     desc = 'Android弧形菜单 1、支持上下左右四个方向展开弧形菜单 ' +
             '2、支持扩展菜单,多少个子菜单都可以 ' +
             '3、支持自定义菜单图标和子菜单图标 ' +

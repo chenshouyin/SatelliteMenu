@@ -27,7 +27,7 @@ import csy.menu.satellitemenulib.R;
  * Created by csy on 2017/10/10.
  * 最多显示5个子菜单,如果需要显示更多,可自己做拓展
  * 微信公众号:陈守印同学
- *
+ * https://github.com/chenshouyin/SatelliteMenu
  */
 
 public class SatelliteMenu extends RelativeLayout implements View.OnClickListener {
