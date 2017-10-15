@@ -37,7 +37,7 @@
         app:menu_image_width="45dp"
         app:menu_item_text_size="4sp"
         app:menu_item_text_color="@color/colorPrimary"
-        android:id="@+id/mSatelliteMenuLeftTop"></csy.menu.satellitemenulib.view.SatelliteMenu>
+        android:id="@+id/mSatelliteMenuLeftTop"/>
 
     <!--右上-->
     <csy.menu.satellitemenulib.view.SatelliteMenu
@@ -48,7 +48,7 @@
         app:radius="130dp"
         app:menu_image_width="45dp"
         app:menu_item_image_width="35dp"
-        android:id="@+id/mSatelliteMenuRightTop"></csy.menu.satellitemenulib.view.SatelliteMenu>
+        android:id="@+id/mSatelliteMenuRightTop"/>
 
     <!--左下-->
     <csy.menu.satellitemenulib.view.SatelliteMenu
@@ -58,7 +58,7 @@
         app:radius="150dp"
         app:menu_image_width="35dp"
         app:menu_item_image_width="30dp"
-        android:id="@+id/mSatelliteMenuLeftBottom"></csy.menu.satellitemenulib.view.SatelliteMenu>
+        android:id="@+id/mSatelliteMenuLeftBottom"/>
 
 
     <!--右下-->
@@ -69,6 +69,6 @@
         app:radius="150dp"
         app:menu_image_width="30dp"
         app:menu_item_image_width="25dp"
-        android:id="@+id/mSatelliteMenuRightBottom"></csy.menu.satellitemenulib.view.SatelliteMenu>
+        android:id="@+id/mSatelliteMenuRightBottom"/>
 
 </RelativeLayout>

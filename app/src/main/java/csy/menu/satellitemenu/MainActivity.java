@@ -45,9 +45,9 @@ public class MainActivity extends AppCompatActivity {
         nameMenuItem.add("相机");
         nameMenuItem.add("电话");
         mSatelliteMenuLeftTop.getmBuilder()
+                .setMenuItemNameTexts(nameMenuItem)
                 .setMenuImage(R.drawable.menu)
                 .setMenuItemImageResource(imageResourceLeftTop)
-                .setMenuItemNameTexts(nameMenuItem)
                 .setOnMenuItemClickListener(new SatelliteMenu.OnMenuItemClickListener() {
                     @Override
                     public void onClick(View view, int postion) {

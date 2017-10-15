@@ -477,9 +477,9 @@ public class SatelliteMenu extends RelativeLayout implements View.OnClickListene
             return this;
         }
         public void creat(){
+            SatelliteMenu.this.setNameMenuItem(menuItemName);
             SatelliteMenu.this.setMenuImage(menuImageResource);
             SatelliteMenu.this.setMenuItemImage(imageMenuItemImageResource);
-            SatelliteMenu.this.setNameMenuItem(menuItemName);
             SatelliteMenu.this.setOnMenuItemClickListener(mOnMenuItemClickListener);
         }
     }
