@@ -16,7 +16,6 @@ compile 'csy.menu.satellitemenulib:SatelliteMenu:1.0.2'
 
 ####使用介绍:
 
-
 | xml属性        | 描述           | 值  |
 | :-------------: |:-------------:| :-----:|
 | radius      | 圆弧直径 | dimension |
