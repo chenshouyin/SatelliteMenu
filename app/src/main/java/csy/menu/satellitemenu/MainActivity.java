@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         nameMenuItem.add("图库");
         nameMenuItem.add("相机");
         nameMenuItem.add("电话");
+
         mSatelliteMenuLeftTop.getmBuilder()
                 .setMenuItemNameTexts(nameMenuItem)
                 .setMenuImage(R.drawable.menu)
@@ -63,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
         imageResourceRightTop.add(R.drawable.imag_take_photo);
         imageResourceRightTop.add(R.drawable.imag_tel);
         imageResourceRightTop.add(R.drawable.iv_move);
+
         mSatelliteMenuRightTop.getmBuilder()
                 .setMenuImage(R.drawable.menu)
                 .setMenuItemImageResource(imageResourceRightTop)
